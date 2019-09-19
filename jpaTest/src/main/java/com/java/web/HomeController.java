@@ -48,10 +48,9 @@ public class HomeController {
 		List<Meeting> result = repository.findByTitleIsLike("%a%");
 		System.out.println(result.size());
 		
-
-		
 		return "home";
 	}
+	
 	
 	public void logic(EntityManager em) {
 		String id = "galid1";
